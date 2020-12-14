@@ -223,6 +223,7 @@ Makefile: ../Reseau_de_tri/Reseau_de_tri.pro D:/appli/QT/5.15.1/mingw81_64/mkspe
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/qt_config.prf \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/win32-g++/qmake.conf \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/exclusive_builds.prf \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/toolchain.prf \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/default_pre.prf \
@@ -251,7 +252,6 @@ Makefile: ../Reseau_de_tri/Reseau_de_tri.pro D:/appli/QT/5.15.1/mingw81_64/mkspe
 		D:/appli/QT/5.15.1/mingw81_64/lib/Qt5Gui.prl \
 		D:/appli/QT/5.15.1/mingw81_64/lib/Qt5Core.prl \
 		D:/appli/QT/5.15.1/mingw81_64/lib/qtmain.prl \
-		.qmake.stash \
 		D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\Reseau_de_tri\Reseau_de_tri.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/spec_pre.prf:
@@ -407,6 +407,7 @@ D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/qt_functions.prf:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/qt_config.prf:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/win32-g++/qmake.conf:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/exclusive_builds.prf:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/toolchain.prf:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/default_pre.prf:
@@ -435,7 +436,6 @@ D:/appli/QT/5.15.1/mingw81_64/lib/Qt5Widgets.prl:
 D:/appli/QT/5.15.1/mingw81_64/lib/Qt5Gui.prl:
 D:/appli/QT/5.15.1/mingw81_64/lib/Qt5Core.prl:
 D:/appli/QT/5.15.1/mingw81_64/lib/qtmain.prl:
-.qmake.stash:
 D:/appli/QT/5.15.1/mingw81_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\Reseau_de_tri\Reseau_de_tri.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

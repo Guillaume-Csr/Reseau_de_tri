@@ -3,11 +3,13 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QGraphicsScene>
 
-class MyScene
+class MyScene : public QGraphicsScene
 {
 public:
-    MyScene();
+    MyScene(QObject * parent = nullptr);
+    QPen changeColor(int value);
 };
 
 #endif // MYSCENE_H

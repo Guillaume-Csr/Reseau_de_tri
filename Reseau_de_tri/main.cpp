@@ -1,4 +1,6 @@
 #include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include <QtWidgets>
 
 #include <QApplication>
 

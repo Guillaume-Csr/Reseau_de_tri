@@ -6,6 +6,8 @@
 #include "iostream"
 #include "myscene.h"
 
+#include <QtWidgets>
+
 using namespace std;
 
 QT_BEGIN_NAMESPACE
