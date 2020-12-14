@@ -1,0 +1,12 @@
+#include "myscene.h"
+#include "mainwindow.h"
+
+MyScene::MyScene(QObject *parent) : QGraphicsScene(parent)
+{
+    QPen black;
+    black.setColor(Qt::black);
+    black.setWidth(3);
+    
+    // First Line
+    addLine(-200, 0, -50, 0, changeColor(MainWindow::))
+}
