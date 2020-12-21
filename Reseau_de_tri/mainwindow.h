@@ -26,12 +26,10 @@ public:
     void TriageValor();
 
 private slots:
-
     void on_Generate_Btn_clicked();
-
-    void on_Testbtn_clicked();
-
+    void on_Reset_Btn_clicked();
     void on_graphicsView_rubberBandChanged(const QRect &viewportRect, const QPointF &fromScenePoint, const QPointF &toScenePoint);
+    void on_Quitbtn_clicked();
 
 private:
     Ui::MainWindow *ui;

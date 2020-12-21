@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
+// Constructor
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -8,14 +10,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
+// Destructor
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
+// Valor Management
 void MainWindow::TriageValor()
 {
-    QList<int>tableau;
+   QList<int>tableau;
 
    tableau.append(ui->spinBox->value());
    tableau.append(ui->spinBox_2->value());
@@ -30,10 +34,9 @@ void MainWindow::TriageValor()
 }
 
 
-
+// Button Generate display lines and connections
 void MainWindow::on_Generate_Btn_clicked()
 {
-    ui->Generate_Btn->setFont(QFont("Comic Sans MS", 10, QFont::Bold, true));
     ui->Generate_Btn->setCursor(QCursor(Qt::PointingHandCursor));
     list_nbr_disorder.clear();
     list_nbr_disorder <<ui->spinBox->value()<<ui->spinBox_2->value()<<ui->spinBox_3->value()<<ui->spinBox_4->value();
@@ -42,23 +45,28 @@ void MainWindow::on_Generate_Btn_clicked()
     TriageValor();
 }
 
-void MainWindow::on_Testbtn_clicked()
+// Reset the App with default value
+void MainWindow::on_Reset_Btn_clicked()
 {
     QMessageBox::information(this,"Reset","Réinitialisation du Réseau de Tri");
-        ui->spinBox->setValue(0);
-        ui->spinBox_2->setValue(0);
-        ui->spinBox_3->setValue(0);
-        ui->spinBox_4->setValue(0);
+    ui->spinBox->setValue(0);
+    ui->spinBox_2->setValue(0);
+    ui->spinBox_3->setValue(0);
+    ui->spinBox_4->setValue(0);
 
-        ui->label->setNum(0);
-        ui->label_2->setNum(0);
-        ui->label_3->setNum(0);
-        ui->label_4->setNum(0);
+    ui->label->setNum(0);
+    ui->label_2->setNum(0);
+    ui->label_3->setNum(0);
+    ui->label_4->setNum(0);
 
-        MainWindow::on_pushButton_clicked();
 }
 
 void MainWindow::on_graphicsView_rubberBandChanged(const QRect &viewportRect, const QPointF &fromScenePoint, const QPointF &toScenePoint)
 {
 
+}
+
+void MainWindow::on_Quitbtn_clicked()
+{
+    delete ui;
 }
