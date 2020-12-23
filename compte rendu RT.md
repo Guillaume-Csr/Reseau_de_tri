@@ -3,15 +3,16 @@
 > Réseau de Tri
 >
 > ![image tri](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/SimpleSortingNetwork2.svg/1200px-SimpleSortingNetwork2.svg.png)
->
 ></p>
 >Guillaume Cuisinier M1
 
 ---
 
+Lien vers le dépôt GitHub du projet : https://github.com/Guillaume-Csr/Reseau_de_tri.git
+
 ## Introdution
 
-Le réseau de tri, comme son nom l'indique est un réseau capable de réaliser un tri soit de valeur ou d'objet. Ici, le but de ce projet est d'utiliser au départ une liste de nombre en désordre et grâce à un systéme de réseau de tri obtenir en résultat la liste de nombre trié soit dans un ordre croissant ou décroissant. 
+Le réseau de tri, comme son nom l'indique est un réseau capable de réaliser un tri soit de valeurs ou d'objets. Ici, le but de ce projet est d'utiliser une liste de nombre en désordre et grâce à un systéme de réseau de tri obtenir en résultat la liste de nombre trié soit dans un ordre croissant ou décroissant. 
 
 Le réseau de tri est basé sur plusieurs enchaînement de comparaison entre deux élément à trier puis ranger dans l'ordre selon les critères de tri. On réprésente ce réseau sous la forme de ligne horizontal relié par certains endroit par des noeuds. Les lignes correspondent aux chemins du réseaux qu'emprinte les chiffres et les noeuds correspondent aux points de comparaison entre les deux nombres présent sur les lignes reliés à un instant t du programme. Ainsi une fois le noeud passé il en résulte la position des nombres triés par ordre de supériorité ou d'infériorité.
 
